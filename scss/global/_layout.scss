@@ -1,0 +1,36 @@
+.perfume__prices {
+    display: flex;
+    gap: 1.188rem;
+    margin-bottom: 1.25rem;
+}
+
+.perfume__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.726rem;
+    padding: 15px 72px;
+}
+
+.perfume__content {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-neutral-white);
+    padding: 24px;
+}
+
+.perfume {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 16px;
+    /* max-width: 23.375rem; */
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-primary-cream);
+}

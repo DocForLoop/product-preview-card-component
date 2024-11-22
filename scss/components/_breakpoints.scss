@@ -1,0 +1,13 @@
+@media (width > 75em) {
+    .perfume {
+        flex-direction: row;
+        max-width: 37.5rem;
+    }
+
+    .perfume__banner img{
+        height: 100%;
+        border-top-left-radius: 0.75rem;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0.75rem;
+    }
+}

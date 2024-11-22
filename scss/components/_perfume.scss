@@ -1,0 +1,40 @@
+.perfume__banner img {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+.perfume__topic {
+    text-transform: uppercase;
+    letter-spacing: 0.313rem;
+    font-size: var(--fs-12);
+    margin-bottom: 0.75rem;
+}
+
+.perfume__description {
+    margin-bottom: 1.5rem;
+}
+
+.perfume__discount-price {
+    font-family: var(--ff-fraunces);
+    font-size: var(--fs-32);
+    color: var(--clr-primary-dark-cyan);
+    font-weight: 700;
+}
+
+.perfume__old-price {
+    text-decoration: line-through;
+    align-self: center;
+    font-size: 0.813rem;
+}
+
+.perfume__button {
+    background-color: var(--clr-primary-dark-cyan);
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 700;
+    color: var(--clr-neutral-white);
+}
+
+
+
+
