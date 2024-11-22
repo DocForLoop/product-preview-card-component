@@ -168,6 +168,12 @@ a, a:visited, a:active {
   border: none;
   font-weight: 700;
   color: var(--clr-neutral-white);
+  transition: background-color 0.2s ease;
+}
+
+.perfume__button:hover {
+  background-color: var(--clr-deep-aquamarine);
+  cursor: pointer;
 }
 
 @media (width > 75em) {
