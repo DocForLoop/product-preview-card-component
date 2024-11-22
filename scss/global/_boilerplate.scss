@@ -1,0 +1,56 @@
+html {
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: var(--ff-montserrat);
+    font-size: var(--fs-14);
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-weight: 500;
+    color: var(--clr-neutral-dark-grayish-blue);
+}
+
+h1, h2, h3 {
+    font-family: var(--ff-fraunces);
+    font-size: var(--fs-32);
+    line-height: 1;
+    font-weight: 700;
+    color: var(--clr-neutral-dark-blue);
+    margin-bottom: 1rem;
+}
+
+p, li, figcaption {
+    text-wrap: pretty;
+    max-width: 65ch;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+}

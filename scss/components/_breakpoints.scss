@@ -1,0 +1,38 @@
+@media (width > 48em) {
+    .perfume {
+        flex-direction: row;
+        max-width: 37.5rem;
+        padding: 0;
+    }
+
+    .perfume__banner img{
+        border-top-left-radius: 0.75rem;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0.75rem;
+        max-width: 18.75rem;
+    }
+
+    .perfume__content {
+        padding: 32px;
+    }
+
+    .perfume__topic {
+        margin-bottom: 1rem;
+    }
+
+    .perfume__content h1 {
+        margin-bottom: 1.2rem;
+    }
+
+    .perfume__description {
+        margin-bottom: 1.2rem;
+    }
+
+    .perfume__prices {
+        margin-bottom: 1.5rem;
+    }
+
+    .perfume__button {
+        padding: 15px 62px;
+    }
+}

@@ -1,1 +1,209 @@
-/*# sourceMappingURL=style.css.map */
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/assets/fonts/montserrat-v29-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/montserrat-v29-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* fraunces-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/fraunces-v31-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root {
+  --ff-fraunces: "Fraunces", Georgia, "Times New Roman", Times, serif;
+  --ff-montserrat: "Montserrat", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fs-32: 2rem;
+  --fs-14: 0.875rem;
+  --fs-12: 0.75rem;
+}
+
+:root {
+  --clr-primary-dark-cyan: hsl(158, 36%, 37%);
+  --clr-primary-cream: hsl(30, 38%, 92%);
+  --clr-neutral-dark-blue: hsl(212, 21%, 14%);
+  --clr-neutral-dark-grayish-blue: hsl(228, 12%, 48%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+  --clr-deep-aquamarine: hsl(157, 43%, 18%);
+}
+
+html {
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: var(--ff-montserrat);
+  font-size: var(--fs-14);
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-weight: 500;
+  color: var(--clr-neutral-dark-grayish-blue);
+}
+
+h1, h2, h3 {
+  font-family: var(--ff-fraunces);
+  font-size: var(--fs-32);
+  line-height: 1;
+  font-weight: 700;
+  color: var(--clr-neutral-dark-blue);
+  margin-bottom: 1rem;
+}
+
+p, li, figcaption {
+  text-wrap: pretty;
+  max-width: 65ch;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+.perfume__prices {
+  display: flex;
+  gap: 1.188rem;
+  margin-bottom: 1.25rem;
+}
+
+.perfume__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.726rem;
+  padding: 15px 72px;
+}
+
+.perfume__content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-neutral-white);
+  padding: 24px;
+}
+
+.perfume {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 16px;
+  max-width: 23.375rem;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-primary-cream);
+}
+
+.perfume__banner img {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.perfume__topic {
+  text-transform: uppercase;
+  letter-spacing: 0.313rem;
+  font-size: var(--fs-12);
+  margin-bottom: 0.75rem;
+}
+
+.perfume__description {
+  margin-bottom: 1.5rem;
+}
+
+.perfume__discount-price {
+  font-family: var(--ff-fraunces);
+  font-size: var(--fs-32);
+  color: var(--clr-primary-dark-cyan);
+  font-weight: 700;
+}
+
+.perfume__old-price {
+  text-decoration: line-through;
+  align-self: center;
+  font-size: 0.813rem;
+}
+
+.perfume__button {
+  background-color: var(--clr-primary-dark-cyan);
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 700;
+  color: var(--clr-neutral-white);
+  transition: background-color 0.2s ease;
+}
+
+.perfume__button:hover {
+  background-color: var(--clr-deep-aquamarine);
+  cursor: pointer;
+}
+
+@media (width > 48em) {
+  .perfume {
+    flex-direction: row;
+    max-width: 37.5rem;
+    padding: 0;
+  }
+  .perfume__banner img {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.75rem;
+    max-width: 18.75rem;
+  }
+  .perfume__content {
+    padding: 32px;
+  }
+  .perfume__topic {
+    margin-bottom: 1rem;
+  }
+  .perfume__content h1 {
+    margin-bottom: 1.2rem;
+  }
+  .perfume__description {
+    margin-bottom: 1.2rem;
+  }
+  .perfume__prices {
+    margin-bottom: 1.5rem;
+  }
+  .perfume__button {
+    padding: 15px 62px;
+  }
+}/*# sourceMappingURL=style.css.map */
