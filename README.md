@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://github.com/)
-- [Live Site](https://docforloop.github.io)
+- [Solution](https://www.frontendmentor.io/solutions/product-preview-card-with-flex-RlLtmBH8Ay)
+- [Live Site](https://docforloop.github.io/product-preview-card-component/)
 
 ## My process
 
