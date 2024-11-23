@@ -170,10 +170,14 @@ a, a:visited, a:active {
   color: var(--clr-neutral-white);
   transition: background-color 0.2s ease;
 }
-
 .perfume__button:hover {
   background-color: var(--clr-deep-aquamarine);
   cursor: pointer;
+}
+
+.perfume__content {
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
 }
 
 @media (width > 48em) {
@@ -190,6 +194,8 @@ a, a:visited, a:active {
   }
   .perfume__content {
     padding: 32px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.75rem;
   }
   .perfume__topic {
     margin-bottom: 1rem;
