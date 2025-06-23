@@ -52,6 +52,7 @@ html {
 }
 
 body {
+  position: relative;
   font-family: var(--ff-montserrat);
   font-size: var(--fs-14);
   line-height: 1.5;
@@ -178,6 +179,29 @@ a, a:visited, a:active {
 .perfume__content {
   border-bottom-left-radius: 0.75rem;
   border-bottom-right-radius: 0.75rem;
+}
+
+.attribution {
+  position: absolute;
+  inset-block-end: 10px;
+  inset-inline: 0;
+  font-size: 11px;
+  text-align: center;
+  color: var(--clr-neutral-dark-blue);
+}
+
+.attribution__link {
+  border-radius: 3px;
+  color: var(--clr-neutral-dark-blue);
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+.attribution__link:hover, .attribution__link:focus-visible {
+  color: var(--clr-primary-dark-cyan);
+}
+.attribution__link:focus-visible {
+  outline: 3px solid var(--clr-primary-dark-cyan);
+  outline-offset: 3px;
 }
 
 @media (width > 48em) {
